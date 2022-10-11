@@ -1,44 +1,42 @@
 import React from "react";
 import img from "./assets/images/1.jpg";
 import "./App.css";
-
+import Header from "./Components/Header"
+import Footer from "./Components/Footer"
 function App() {
+  let isLogin = true
   return (
     <>
       <div className="container-fluid">
-        <div className="title_header">
-          <h1>The Pulpit Rock</h1>
-        </div>
+        <Header isLogin = {isLogin}/>
         <div className="row m-3">
-          <div className="col-md-3">
+          <div className="col-12 col-lg-3">
             <div className="border-bottom text-info bg-gray"><p>text 1</p></div>
             <div className="border-bottom text-info bg-gray"><p>text 1</p></div>
             <div className="border-bottom text-info bg-gray"><p>text 1</p></div>
             <div className="border-bottom text-info bg-gray"><p>text 1</p></div>
           </div>
-          <div className="col-md-6 text-center pt-3">
+          <div className="col-12 col-lg-6 text-center pt-3">
             <h1>The Walk</h1>
             <p>text here text here text here text here text here text here text here text here text here text here text here text here text here text here text here text here text here text here text here text here text here text here text here text here text here text here</p>
             <img className="mainImage" src={img} alt={""}/> 
           </div>
-          <div className="col-md-3 bg-info h-50">
+          <div className="col-12 col-lg-3 bg-info h-50">
           <div className="border-bottom">
-            <p>text 1</p>
+            <p style={{fontSize: "20px", fontWeight: "bold"}}>text 1</p>
             <p style={{fontSize: "12px",color: "green"}}>text here text here text here text here text here text here text here text here text here text here text here text here </p>
           </div>
           <div className="border-bottom">
-            <p>text 1</p>
+            <p style={{fontSize: "20px", fontWeight: "bold"}}>text 1</p>
             <p style={{fontSize: "12px",color: "green"}}>text here text here text here text here text here text here text here text here text here text here text here text here </p>
           </div>
           <div className="border-bottom">
-            <p>text 1</p>
+            <p style={{fontSize: "20px", fontWeight: "bold"}}>text 1</p>
             <p style={{fontSize: "12px",color: "green"}}>text here text here text here text here text here text here text here text here text here text here text here text here </p>
           </div>
           </div>
         </div>
-        <div className="footer d-block">
-          <p className="text-center pt-4">text here text here text here text here text here text here text here text here text here text here text here text here text here </p>
-        </div>
+        <Footer />
       </div>
     </>
   );
