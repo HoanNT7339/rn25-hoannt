@@ -21,13 +21,13 @@
 .App-link {
   color: #61dafb;
 }
-/* .title_header {
+.title_header {
   border: 1px solid black;
   color:red;
   background-color: #aaaeae;
   text-align: center;
   min-height: 5rem;
-} */
+}
 .mainImage {
   width: 400px;
   height: 400px;

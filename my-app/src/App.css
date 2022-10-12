@@ -1,0 +1,17 @@
+.component01 {
+    border : 1px solid gray;
+}
+.component02 {
+    border : 1px solid gray;
+}
+.component03 {
+    border : 1px solid gray;
+}
+.star-rating {
+    display:flex;
+    font-size:1.5em;
+    padding:0 .1em;
+    text-align:center;
+    width:5em;
+  }
+  
