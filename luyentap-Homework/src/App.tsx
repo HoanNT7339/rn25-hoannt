@@ -7,9 +7,13 @@ import './App.css';
 // import ChartBar1 from './Components/Session02/ChartBar1';
 // import ChartItem from './Components/Session02/ChartItem';
 // import Profile from './Components/Session02/Profile';
-// import Practive from './Components/Practive';
+// import ButtonLike from './Components/Session03/ButtonLike'
+// import Buttons from './Components/Session05/Buttons';
 // import Rating from './Components/Rating';
-import Form from './Components/Form';
+// import Form from './Components/Form';
+// import { Button } from 'react-bootstrap';
+// import ListUser from './Components/ListUser';
+import BrowserRouterExample from './Components/Session08/BrowserRouterExample';
 
 
 
@@ -46,9 +50,9 @@ function App() {
       <div className="container m-5 bg-light">
         <Profile iconName="aaaaaaaaa" text="HTML" color='green' unit='150'/>
         <Profile iconName="aaaaaaaaa" text="HTML" color='green' unit='150'/>
-      </div> */}
+      </div>  */}
 
-      {/* <div className="container m-5 row d-flex">
+      {/* {/* <div className="container m-5 row d-flex">
         <div className="col-2 m-1 flex-fill" style={{border:'1px solid black',height:'200px'}}>
           aaaaaaaaaa
           <div style={{backgroundColor:'gray',border:'1px solid black', margin:'0 -13px'}}>bbbbbbbbb</div>
@@ -63,14 +67,20 @@ function App() {
           aaaaaaaaaa
         </div>
       </div> */}
+      {/* <div>
+        <ButtonLike/>
+      </div> */}
       {/* <div className="m-5 ">
-      <Practive />
+        <Buttons />
       </div> */}
       {/* <div className="m-5 ">
       <Rating />
       </div> */}
-      <div className="m-5">
-        <Form />
+      {/* <div className="m-5">
+        <ListUser />
+      </div> */}
+      <div>
+        <BrowserRouterExample />
       </div>
     </div>
   );
