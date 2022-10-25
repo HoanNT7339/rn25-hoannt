@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 interface IUser {
   id: string;
@@ -7,6 +8,7 @@ interface IUser {
 
 function List() {
   const [stateListUser, setStateListUser] = useState<Array<IUser>>([]);
+  const navi = useNavigate();
   useEffect(() => {
     getListUserApi();
   }, []);
@@ -36,18 +38,8 @@ function List() {
         console.error(error);
       });
   };
-  const handleDetailUser = (id: string | undefined) => {
-    const url = "https://6352910da9f3f34c3741b610.mockapi.io/users/" + id;
-    fetch(url, {
-      method: "GET",
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        getListUserApi();
-      })
-      .catch((error) => {
-        console.error(error);
-      });
+  const gotoDetail = (id: string) => {
+    navi ("detail/" + id);
   };
   return (
     <table className="table">
@@ -64,7 +56,12 @@ function List() {
             <th scope="row">{user.id}</th>
             <td>{user.name}</td>
             <td>
-              <button onClick={() => handleDetailUser(user?.id)} className="m-1 btn btn-success">Detail</button>
+              <button
+                onClick={() => gotoDetail(user?.id)}
+                className="m-1 btn btn-success"
+              >
+                Detail
+              </button>
               <button
                 onClick={() => handleDelete(user?.id)}
                 className="m-1 btn btn-warning"
