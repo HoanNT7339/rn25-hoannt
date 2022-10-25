@@ -18,6 +18,7 @@ function BrowserRouterExample() {
           <Route path='/list' element={<div><List /></div>}></Route>
           <Route path='/form' element={<div><RegisterForm /></div>}></Route>
           <Route path='/detail' element={<div><Detail /></div>}></Route>
+          <Route path="/detail/:id" element={<Detail />} />
           <Route path='/input' element={<div><InputUser /></div>}></Route>
           <Route path='*' element={<div style={{ textAlign:'center'}}><h1>Page not found!</h1></div>}></Route>
         </Routes>
