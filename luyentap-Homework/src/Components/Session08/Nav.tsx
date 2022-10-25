@@ -8,16 +8,24 @@ function Nav() {
         <div className="card-header">
           <ul className="nav nav-pills">
             <li className="nav-item">
-                <Link className="nav-link active m-1 "  to={'/list'}>List</Link>
+              <Link className="nav-link active m-1 " to={"/list"}>
+                List
+              </Link>
             </li>
             <li className="nav-item">
-                <Link className="nav-link active m-1" to={'/form'}>Form</Link>
+              <Link className="nav-link active  m-1" to={"/input"}>
+                Add User
+              </Link>
             </li>
             <li className="nav-item">
-                <Link className="nav-link active  m-1" to={'/detail'}>Detail</Link>
+              <Link className="nav-link active m-1" to={"/form"}>
+                Form
+              </Link>
             </li>
             <li className="nav-item">
-                <Link className="nav-link active  m-1" to={'/input'}>Add User</Link>
+              <Link className="nav-link active  m-1" to={"/detail"}>
+                Detail
+              </Link>
             </li>
           </ul>
         </div>
